@@ -141,7 +141,7 @@ $pmembersid= explode("\n",$txxt);
 ";
     	file_put_contents('pmembers.txt',$aaddd);
 }
-        if($chat_id == 121311764)
+        if($chat_id == 190647723)
         {
           if(!file_exists('tokens.txt')){
         file_put_contents('tokens.txt',"");
@@ -156,7 +156,7 @@ $pmembersid= explode("\n",$txxt);
     }else if ($text == "Version") {
       apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>PvResan</b>
 <b>ver. 3.0</b>
-<code>Coded By</code> @arshiahp
+<code>Coded By</code> @shereyder
 Copy Right 2016©","parse_mode"=>"html"));
     }
     else if ($matches[0] == "/update"&& strpos($matches[1], ":")) {
@@ -176,16 +176,16 @@ Copy Right 2016©","parse_mode"=>"html"));
         file_put_contents($id.'/booleans.txt',"false");
         $phptext = file_get_contents('phptext.txt');
         $phptext = str_replace("233595819:AAH7EIQE-LaikkreJoFx3AcazVhfQomaqcc",$matches[1],$phptext);
-        $phptext = str_replace("**190647723**",$chat_id,$phptext);
+        $phptext = str_replace("190647723",$chat_id,$phptext);
         file_put_contents($id.'/pvresan.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$matches[1].'$texttwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$matches[1].'/setwebhook?url=https://pv-arshia.rhcloud.com/Launcher.php'.$chat_id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$matches[1].'/setwebhook?url=https://pvresanbot-hamechi.rhcloud.com/Launcher.php'.$chat_id.'/pvresan.php');
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🚀 ربات شما با مـوفقیت آپدیت شد ♻️"));
 
 
     }
     }
-    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 121311764) {
+    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 190647723) {
       if (strpos($text, ":")) {
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال برسی 🔃"));
     $url = "http://api.telegram.org/bot".$matches[0]."/getme";
@@ -215,11 +215,11 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
         $phptext = str_replace("190647723",$chat_id,$phptext);
         file_put_contents($token.$id.'/pvresan.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=https://pv-arshia.rhcloud.com.rhcloud.com/Launcher.php'.$chat_id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=https://pvresanbot-hamechi.rhcloud.com.rhcloud.com/Launcher.php'.$chat_id.'/pvresan.php');
     $unstalled = "ربات شما با موفقیت نصب شده است🚀 
 برای ورود به ربات خود کلیک کنید 👇😃
 به ربات ما امتیاز بدید  👇
- https://telegram.me/storebot?start=pvresanbot
+ https://telegram.me/storebot?start=pvresansazrobot
 .";
     
     $bot_url    = "https://api.telegram.org/bot233595819:AAH7EIQE-LaikkreJoFx3AcazVhfQomaqcc/"; 
@@ -267,7 +267,7 @@ else{
 
 }
 
-        }else if ($matches[0] != "/update"&&$matches[1] != ""&&$matches[2] != ""&&$chat_id == 121311764) {
+        }else if ($matches[0] != "/update"&&$matches[1] != ""&&$matches[2] != ""&&$chat_id == 190647723) {
           
         if (strpos($text, ":")) {
           
@@ -299,7 +299,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
         $phptext = str_replace("190647723",$matches[1],$phptext);
         file_put_contents($token.$id.'/pvresan.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=https://pv-arshia.rhcloud.com/Launcher.php'.$id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=https://pvresanbot-hamechi.rhcloud.com/Launcher.php'.$id.'/pvresan.php');
     $unstalled = "ربات شما با موفقیت نصب شده است🚀 
 برای ورود به ربات خود کلیک کنید 👇😃
 ";
